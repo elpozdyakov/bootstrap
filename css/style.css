@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(103, 103, 103);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+input {
+    margin-bottom: 15px;
+}
