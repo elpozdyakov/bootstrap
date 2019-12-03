@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container__input">
+                <input type="text" class="form-control inpt" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="range" class="form-control inpt" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="color" class="form-control inpt" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <button id="add" type="button" class="btn btn-primary">Add</button>
+            <button id="del" type="button" class="btn btn-warning">Delete</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        let elem = '<input type="text" class="form-control inpt" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">';
+
+
+        $('#add').click(function() {
+            $('.container__input').append(elem);
+
+
+        });
+
+        $('#del').click(function() {
+            $('.inpt').last().remove();
+
+
+        });
+    </script>
+</body>
+
+</html>
